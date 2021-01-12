@@ -10,8 +10,8 @@
 /map → 「地図じゃ！」 と回答
 
 ### 今後のロードマップ
-- 定期アナウンス
-- 適宜リアクション
+- 定期アナウンス機能実装
+- 適宜リアクション追加
 
 ### バグ報告や機能要望
 - [Issuesで管理](https://github.com/mapconcierge/discordpy-startup4tadataka/issues)
