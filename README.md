@@ -2,6 +2,25 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
+
+## 伊能忠敬Botの実装状況
+
+### コマンド
+/ping → 「ぽん」 と回答
+/map → 「地図じゃ！」 と回答
+
+### 今後のロードマップ
+- 定期アナウンス
+- 適宜リアクション
+
+### バグ報告や機能要望
+- [Issuesで管理](https://github.com/mapconcierge/discordpy-startup4tadataka/issues)
+
+
+
+
+--- 以下は本家ドキュメント
+
 - Herokuでdiscord.pyを始めるテンプレートです。
 - Use Template からご利用ください。
 - 使い方はこちら： [Discord Bot 最速チュートリアル【Python&Heroku&GitHub】 - Qiita](https://qiita.com/1ntegrale9/items/aa4b373e8895273875a8)
