@@ -22,20 +22,16 @@ async def map(ctx):
     await ctx.send('地図じゃ！')
 
     
+# 定期つぶやき
 client = discord.Client() #インスタンス化
 
-@client.event # ?????
+@client.event
 async def on_ready():
-    print("hoge")
-    
-# 定期つぶやき
-#@client.event
-#async def on_ready():
-#    asyncio.ensure_future(greeting_gm())
-#
-#async def greeting_gm():
-#    await client.send_message(channel, 'おはよう')
-#    await asyncio.sleep(60)
+    asyncio.ensure_future(greeting_gm())
+
+async def greeting_gm():
+    await client.send_message(channel, 'おはよう')
+    await asyncio.sleep(60)
     
     
 bot.run(token)
