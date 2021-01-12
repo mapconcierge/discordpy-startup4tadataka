@@ -19,13 +19,11 @@ async def ping(ctx):
 
 @bot.command()
 async def map(ctx):
-    await ctx.send('地図？')
-    await asyncio.sleep(10)
-    await ctx.send('伊能図のことか？')
+    await ctx.send('地図といえば伊能図じゃ！')
 
 @bot.command()
 async def 教えて(ctx):
-    await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間じゃ。')
+    await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間、オンライン開催じゃ。')
 
   
 bot.run(token)
