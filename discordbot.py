@@ -25,5 +25,8 @@ async def map(ctx):
 async def 教えて(ctx):
     await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間、オンライン開催じゃ。')
 
+@bot.command()
+async def 助けて(ctx):
+    await ctx.send('困ったときは #総合受付 チャンネルに行くと誰かが助けてくれるぞ。')
   
 bot.run(token)
