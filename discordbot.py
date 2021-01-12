@@ -15,7 +15,11 @@ async def on_command_error(ctx, error):
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    await ctx.send('ぽん')
 
+@bot.command()
+async def map(ctx):
+    await ctx.send('地図じゃ！')
+    
 
 bot.run(token)
