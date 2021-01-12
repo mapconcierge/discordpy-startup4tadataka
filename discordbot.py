@@ -2,7 +2,7 @@ from discord.ext import commands
 import os
 import traceback
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='忠敬さん')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
@@ -22,6 +22,10 @@ async def map(ctx):
     await ctx.send('地図？')
     await asyncio.sleep(10)
     await ctx.send('伊能図のことか？')
-    
+
+@bot.command()
+async def 教えて(ctx):
+    await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間じゃ。')
+
   
 bot.run(token)
