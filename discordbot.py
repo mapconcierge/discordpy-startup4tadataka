@@ -19,19 +19,9 @@ async def ping(ctx):
 
 @bot.command()
 async def map(ctx):
-    await ctx.send('地図じゃ！')
-
+    await ctx.send('地図？')
+    await asyncio.sleep(10)
+    await ctx.send('伊能図のことか？')
     
-# 定期つぶやき
-#client = discord.Client() #インスタンス化
-#
-#@client.event
-#async def on_ready():
-#    asyncio.ensure_future(greeting_gm())
-#
-#async def greeting_gm():
-#    await client.send_message(channel, 'おはよう')
-#    await asyncio.sleep(60)
-    
-    
+  
 bot.run(token)
