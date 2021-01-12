@@ -27,6 +27,7 @@ async def 教えて(ctx):
 
 @bot.command()
 async def 助けて(ctx):
-    await ctx.send('困ったときは ¥#総合受付 チャンネルに行くと誰かが助けてくれるぞ。')
+    tasukete_msg = '困ったときは ¥#総合受付 チャンネルに行くと誰かが助けてくれるぞ。'
+    await ctx.send(tasukete_msg)
   
 bot.run(token)
