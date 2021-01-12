@@ -20,6 +20,13 @@ async def ping(ctx):
 @bot.command()
 async def map(ctx):
     await ctx.send('地図じゃ！')
+
+    
+client = discord.Client() #インスタンス化
+
+@client.event # ?????
+async def on_ready():
+    print("hoge")
     
 # 定期つぶやき
 #@client.event
