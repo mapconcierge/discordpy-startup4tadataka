@@ -3,7 +3,7 @@ import os  # Python osモジュールをインポート tokenキーの取得で�
 import traceback  # 例外発生時の問題特定
 
 bot = commands.Bot(command_prefix='忠敬さん')
-token = os.environ['DISCORD_BOT_TOKEN']
+token = os.environ['DISCORD_BOT_TOKEN']  # Heroku側にDISCORD_BOT_TOKEN変数としてTokenキーは記述してある
 
 
 @bot.event
@@ -12,7 +12,7 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-# メンテナンス用
+# メンテナンス用イベントハンドラ
 @bot.command()
 async def ping(ctx):
     await ctx.send('ぽん')
@@ -22,7 +22,7 @@ async def map(ctx):
     await ctx.send('地図といえば伊能図じゃ！')
 
 
-# 定型文
+# 定型文イベントハンドラ
 @bot.command()
 async def 教えて(ctx):
     await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間、オンライン開催じゃ。')
