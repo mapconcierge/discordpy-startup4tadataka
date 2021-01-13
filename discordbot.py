@@ -12,7 +12,7 @@ async def on_command_error(ctx, error):
     error_msg = ''.join(traceback.TracebackException.from_exception(orig_error).format())
     await ctx.send(error_msg)
 
-
+# メンテナンス用
 @bot.command()
 async def ping(ctx):
     await ctx.send('ぽん')
@@ -21,6 +21,8 @@ async def ping(ctx):
 async def map(ctx):
     await ctx.send('地図といえば伊能図じゃ！')
 
+
+# 定型文
 @bot.command()
 async def 教えて(ctx):
     await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間、オンライン開催じゃ。')
@@ -29,5 +31,11 @@ async def 教えて(ctx):
 async def 助けて(ctx):
     tasukete_msg = '困ったときは ' + chr(35) + '総合受付 チャンネルに行くと誰かが助けてくれるぞ。'
     await ctx.send(tasukete_msg)
+
+@bot.command()
+async def はどう思う？(ctx):
+    await ctx.send('歩け歩け、続けることの大切さ')
+
+
   
 bot.run(token)
