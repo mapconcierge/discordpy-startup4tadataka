@@ -1,4 +1,4 @@
-from discord.ext import commands
+from discord.ext import commands # Bot Commands Frameworkをインポート
 import os
 import traceback
 
