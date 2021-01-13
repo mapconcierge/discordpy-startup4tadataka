@@ -5,6 +5,8 @@ import traceback
 bot = commands.Bot(command_prefix='忠敬さん')
 token = os.environ['DISCORD_BOT_TOKEN']
 
+# 接続に必要なオブジェクトを生成
+client = discord.Client()
 
 @bot.event
 async def on_command_error(ctx, error):
