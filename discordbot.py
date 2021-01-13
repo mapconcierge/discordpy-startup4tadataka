@@ -1,6 +1,6 @@
-from discord.ext import commands # Bot Commands Frameworkをインポート
-import os
-import traceback
+from discord.ext import commands  # Bot Commands Frameworkをインポート
+import os  # Python osモジュールをインポート tokenキーの取得で使用
+import traceback  # 例外発生時の問題特定
 
 bot = commands.Bot(command_prefix='忠敬さん')
 token = os.environ['DISCORD_BOT_TOKEN']
