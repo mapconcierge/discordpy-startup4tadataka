@@ -33,7 +33,7 @@ async def 助けて(ctx):
     await ctx.send(tasukete_msg)
 
 @bot.command()
-async def はどう思う？(ctx):
+async def はどう思う(ctx):
     await ctx.send('歩け歩け、続けることの大切さ。')
 
 
