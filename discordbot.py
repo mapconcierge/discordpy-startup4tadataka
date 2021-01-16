@@ -36,6 +36,10 @@ async def 助けて(ctx):
 async def はどう思う(ctx):
     await ctx.send('歩け歩け、続けることの大切さ。')
 
+@bot.command()
+async def そうですよね(ctx):
+    await ctx.send('そのとおりです。')
+
 
   
 bot.run(token)
