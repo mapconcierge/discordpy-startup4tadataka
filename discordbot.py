@@ -24,8 +24,8 @@ async def map(ctx):
 
 # 定型文イベントハンドラ
 @bot.command()
-async def 教えて(ctx):
-    await ctx.send('日本地図学会の定期大会は2021年1月30日、31日の２日間、オンライン開催じゃ。')
+async def はじまりましたね(ctx):
+    await ctx.send('この２日間、オンライン大会を私も楽しみますよ。')
 
 @bot.command()
 async def 助けて(ctx):
@@ -40,6 +40,25 @@ async def はどう思う(ctx):
 async def そうですよね(ctx):
     await ctx.send('そのとおりです。')
 
+@bot.command()
+async def お元気ですね(ctx):
+    await ctx.send('当年276才。まだまだ元気だぞ！')
+
+@bot.command()
+async def 間宮さんについてどう思う(ctx):
+    await ctx.send('間宮林蔵君には、わしが果たせなかった北蝦夷を調べてもらい、助かっている。')
+
+@bot.command()
+async def 赤水さんについてどう思う(ctx):
+    await ctx.send('長久保赤水先輩の地図が、にわかに話題になってきたが、よろこばしい。')
+
+@bot.command()
+async def 生まれはどこ(ctx):
+    await ctx.send('延享2年に上総国山辺郡小関村の名主「小関家」の子として生まれまして、「三次郎」と呼ばれていましたね。')
+
+@bot.command()
+async def どうして地図を作ったの(ctx):
+    await ctx.send('歴学を学んでいるうちに、どうしても地球の大きさを知る必要があると思いまして、ただそのためには天体測量で遠くまで行かなければならず、一番遠い蝦夷まで測量しようと思いましたね。')
 
   
 bot.run(token)
