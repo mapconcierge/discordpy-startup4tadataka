@@ -42,15 +42,15 @@ async def そうですよね(ctx):
 
 @bot.command()
 async def お元気ですね(ctx):
-    await ctx.send('当年276才。まだまだ元気だぞ！')
+    await ctx.send('当年276才。まだまだ元気ですよ！')
 
 @bot.command()
 async def 間宮さんについてどう思う(ctx):
-    await ctx.send('間宮林蔵君には、わしが果たせなかった北蝦夷を調べてもらい、助かっている。')
+    await ctx.send('間宮林蔵君には、わたしが果たせなかった北蝦夷を調べてもらい、助かっています。')
 
 @bot.command()
 async def 赤水さんについてどう思う(ctx):
-    await ctx.send('長久保赤水先輩の地図が、にわかに話題になってきたが、よろこばしい。')
+    await ctx.send('長久保赤水先輩の地図が、にわかに話題になってきましたが、よろこばしいですね。')
 
 @bot.command()
 async def 生まれはどこ(ctx):
