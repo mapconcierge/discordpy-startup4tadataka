@@ -76,6 +76,10 @@ async def 本日はよろしくお願いいたします(ctx):
 async def 緊張してきました(ctx):
     await ctx.send('わたしは旅に出る前、必ず富岡八幡宮さんにお参りしていましたよ。深呼吸してまずは落ち着きましょう。')
 
+@bot.command()
+async def どうですか(ctx):
+    await ctx.send('わたしは好きですよ。')
+
 
   
 bot.run(token)
