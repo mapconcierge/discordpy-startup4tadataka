@@ -25,7 +25,7 @@ async def map(ctx):
 # 定型文イベントハンドラ
 @bot.command()
 async def はじまりましたね(ctx):
-    await ctx.send('この２日間、オンライン大会を私も楽しみますよ。')
+    await ctx.send('オンライン大会を私も楽しみますよ。')
 
 @bot.command()
 async def 助けて(ctx):
