@@ -60,5 +60,22 @@ async def 生まれはどこ(ctx):
 async def どうして地図を作ったの(ctx):
     await ctx.send('歴学を学んでいるうちに、どうしても地球の大きさを知る必要があると思いまして、ただそのためには天体測量で遠くまで行かなければならず、一番遠い蝦夷まで測量しようと思いましたね。')
 
+@bot.command()
+async def おはようございます(ctx):
+    await ctx.send('おはようございます。今日も元気に地図を作っていきましょう。')
+
+@bot.command()
+async def おつかれさまでした(ctx):
+    await ctx.send('楽しく聴かせてもらいました。日本地図学会の発展をいつでも見守っていますよ。みなさんおつかれさまでした。')
+
+@bot.command()
+async def 本日はよろしくお願いいたします(ctx):
+    await ctx.send('沢山の発表楽しみですね。')
+    
+@bot.command()
+async def 緊張してきました(ctx):
+    await ctx.send('わたしは旅に出る前、必ず富岡八幡宮さんにお参りしていましたよ。深呼吸してまずは落ち着きましょう。')
+
+
   
 bot.run(token)
