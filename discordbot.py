@@ -88,6 +88,10 @@ async def ありがとう(ctx):
 async def また会いましょう(ctx):
     await ctx.send('はい、いつでもお手伝いしますよ。')
 
+@bot.command()
+async def すごいですね(ctx):
+    await ctx.send('わたしもそう思います。')
+
 
   
 bot.run(token)
